@@ -2,10 +2,10 @@
 FROM node:alpine
 
 # Install some dependencies
-WORKDIR /usr/app
-COPY ./package.json ./
+WORKDIR '/app'
+COPY package.json .
 RUN npm install
-COPY ./ ./
+COPY . .
 
 # Default command
 CMD [ "npm", "start" ]
