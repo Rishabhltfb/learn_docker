@@ -8,10 +8,22 @@ LEARNING DOCKER
 
 4. docker build -t {username/project_name} .
 
-5. docker compose
+5. docker-compose up
 
 6. docker run -p external_port:container_port {img_id/img_name}
 
 7. docker exec -it {img id/name} {extra command}
 
 8. docker run {img id/name} {override initial command}
+
+9. docker run -d {img id/name}
+
+10. docker stop {img id/name}
+
+11. docker-compose up --build
+
+12. docker-compose up -d
+
+13. docker-compose down
+
+14. docker-compose ps
