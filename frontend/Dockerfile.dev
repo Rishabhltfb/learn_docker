@@ -1,9 +1,12 @@
-FROM node:alpine
+FROM node:alpine@sha256:f372a9ffcec27159dc9623bad29997a1b61eafbb145dbf4f7a64568be2f59b99
 
-WORKDIR '/home/app'
+ENV NODE_ENV production
+WORKDIR '/home/node'
 
-COPY package.json .
+COPY --chown=node:node package.json .
 RUN npm install
-COPY . .
+
+COPY --chown=node:node . .
+USER node
 
 CMD ["npm", "run", "start"]
