@@ -1,4 +1,4 @@
-LEARNING DOCKER
+LEARNING DOCKER with Docker commands
 
 1. docker run {img_id/img_name}
 
@@ -33,3 +33,5 @@ LEARNING DOCKER
 16. docker image rm -f [IMAGE...]
 
 17. docker images
+
+18. docker-compose {down, build or up}
