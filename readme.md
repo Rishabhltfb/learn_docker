@@ -30,7 +30,7 @@ LEARNING DOCKER with Docker commands
 
 15. docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app {img id/name}
 
-16. docker image rm -f [IMAGE...]
+16. docker image rm -f [IMAGES...]
 
 17. docker images
 
