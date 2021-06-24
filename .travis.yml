@@ -3,8 +3,8 @@ services:
   - docker
 
 before_install:
+  - cd frontend
   - docker build -t docker-react -f Dockerfile.dev .
 
 script:
-  - cd frontend
   - docker run docker-react npm run test -- --coverage
